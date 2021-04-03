@@ -9,31 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36aa1652-33b5-4322-8da5-bb12a0420b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_auto_value_auto_value_annotations_1_7_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_5_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_30_1_android_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_truth_truth_1_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_compat_qual_2_5_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_3_9_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_ow2_asm_asm_9_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/SchoolViewModelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/fragment/SchoolListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/fragment/SchoolListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/model/School.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/model/School.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/SchoolViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/SchoolViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/ExampleUnitTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/ExampleUnitTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="36aa1652-33b5-4322-8da5-bb12a0420b58" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,30 +192,30 @@
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state x="384" y="260" key="AndroidCreateResourceFileDialog/0.25.1680.959@0.25.1680.959" timestamp="1617390668484" />
-    <state width="1472" height="253" key="GridCell.Tab.0.bottom" timestamp="1617434328113">
-      <screen x="0" y="25" width="1680" height="959" />
+    <state width="1472" height="253" key="GridCell.Tab.0.bottom" timestamp="1617434492059">
+      <screen x="0" y="25" width="1680" height="961" />
     </state>
     <state width="1472" height="253" key="GridCell.Tab.0.bottom/0.25.1680.959@0.25.1680.959" timestamp="1617434328113" />
     <state width="1472" height="211" key="GridCell.Tab.0.bottom/0.25.1680.960@0.25.1680.960" timestamp="1617419614875" />
-    <state width="1472" height="253" key="GridCell.Tab.0.bottom/0.25.1680.961@0.25.1680.961" timestamp="1617434280663" />
-    <state width="1472" height="253" key="GridCell.Tab.0.center" timestamp="1617434328113">
-      <screen x="0" y="25" width="1680" height="959" />
+    <state width="1472" height="253" key="GridCell.Tab.0.bottom/0.25.1680.961@0.25.1680.961" timestamp="1617434492059" />
+    <state width="1472" height="253" key="GridCell.Tab.0.center" timestamp="1617434492059">
+      <screen x="0" y="25" width="1680" height="961" />
     </state>
     <state width="1472" height="253" key="GridCell.Tab.0.center/0.25.1680.959@0.25.1680.959" timestamp="1617434328113" />
     <state width="1472" height="211" key="GridCell.Tab.0.center/0.25.1680.960@0.25.1680.960" timestamp="1617419614874" />
-    <state width="1472" height="253" key="GridCell.Tab.0.center/0.25.1680.961@0.25.1680.961" timestamp="1617434280662" />
-    <state width="1472" height="253" key="GridCell.Tab.0.left" timestamp="1617434328112">
-      <screen x="0" y="25" width="1680" height="959" />
+    <state width="1472" height="253" key="GridCell.Tab.0.center/0.25.1680.961@0.25.1680.961" timestamp="1617434492059" />
+    <state width="1472" height="253" key="GridCell.Tab.0.left" timestamp="1617434492059">
+      <screen x="0" y="25" width="1680" height="961" />
     </state>
     <state width="1472" height="253" key="GridCell.Tab.0.left/0.25.1680.959@0.25.1680.959" timestamp="1617434328112" />
     <state width="1472" height="211" key="GridCell.Tab.0.left/0.25.1680.960@0.25.1680.960" timestamp="1617419614874" />
-    <state width="1472" height="253" key="GridCell.Tab.0.left/0.25.1680.961@0.25.1680.961" timestamp="1617434280662" />
-    <state width="1472" height="253" key="GridCell.Tab.0.right" timestamp="1617434328113">
-      <screen x="0" y="25" width="1680" height="959" />
+    <state width="1472" height="253" key="GridCell.Tab.0.left/0.25.1680.961@0.25.1680.961" timestamp="1617434492059" />
+    <state width="1472" height="253" key="GridCell.Tab.0.right" timestamp="1617434492059">
+      <screen x="0" y="25" width="1680" height="961" />
     </state>
     <state width="1472" height="253" key="GridCell.Tab.0.right/0.25.1680.959@0.25.1680.959" timestamp="1617434328113" />
     <state width="1472" height="211" key="GridCell.Tab.0.right/0.25.1680.960@0.25.1680.960" timestamp="1617419614875" />
-    <state width="1472" height="253" key="GridCell.Tab.0.right/0.25.1680.961@0.25.1680.961" timestamp="1617434280663" />
+    <state width="1472" height="253" key="GridCell.Tab.0.right/0.25.1680.961@0.25.1680.961" timestamp="1617434492059" />
     <state x="576" y="283" key="chooseDestDirectoryDialog" timestamp="1617431784859">
       <screen x="0" y="25" width="1680" height="959" />
     </state>
