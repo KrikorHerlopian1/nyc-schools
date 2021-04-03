@@ -9,19 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36aa1652-33b5-4322-8da5-bb12a0420b58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/model/SchoolRepoModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/model/ScoreRepoModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/adapter/SchoolListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/adapter/SchoolListAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/apiinterface/ApiInterfaceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/apiinterface/ApiInterfaceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/fragment/SchoolDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/fragment/SchoolDetailFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/fragment/SchoolListFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/fragment/SchoolListFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/repository/Repository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/repository/Repository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/SchoolViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/SchoolViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/ScoreViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jpmorgan/a20210402_krikorherlopian_nycschools/viewmodel/ScoreViewModel.java" afterDir="false" />
-    </list>
+    <list default="true" id="36aa1652-33b5-4322-8da5-bb12a0420b58" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
