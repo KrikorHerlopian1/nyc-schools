@@ -1,9 +1,10 @@
 package com.jpmorgan.a20210402_krikorherlopian_nycschools.apiinterface;
 
-
 import androidx.lifecycle.MutableLiveData;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.School;
+import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.SchoolRepoModel;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.Score;
+import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.ScoreRepoModel;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.service.ServiceGenerator;
 import java.util.List;
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
@@ -15,8 +16,8 @@ import retrofit2.Response;
 
 
 public class ApiInterfaceClient {
-    private MutableLiveData<List<School>> school = new MutableLiveData<List<School>>();
-    private MutableLiveData<List<Score>> score = new MutableLiveData<List<Score>>();
+    private MutableLiveData<SchoolRepoModel> school = new MutableLiveData<SchoolRepoModel>();
+    private MutableLiveData<ScoreRepoModel> score = new MutableLiveData<ScoreRepoModel>();
     static ApiInterfaceClient instance = null;
     static String TAG = "ApiInterfaceClient";
 
@@ -26,10 +27,10 @@ public class ApiInterfaceClient {
         }
         return instance;
     }
-    public MutableLiveData<List<Score>> getScore(){
+    public MutableLiveData<ScoreRepoModel> getScore(){
         return score;
     }
-    public MutableLiveData<List<School>> getSchools(){
+    public MutableLiveData<SchoolRepoModel> getSchools(){
         return school;
     }
     public void getSchoolsCall(){
@@ -43,10 +44,13 @@ public class ApiInterfaceClient {
                     @Override
                     public void onSuccess(Response<List<School>> value) {
                         List<School> result = value.body();
-                        school.postValue(result);
+                        SchoolRepoModel schoolRepoModel = new SchoolRepoModel(result);
+                        school.postValue(schoolRepoModel);
                     }
                     @Override
                     public void onError(Throwable e) {
+                        SchoolRepoModel schoolRepoModel = new SchoolRepoModel(e);
+                        school.postValue(schoolRepoModel);
                     }
                 });
     }
@@ -61,10 +65,13 @@ public class ApiInterfaceClient {
                     @Override
                     public void onSuccess(Response<List<Score>> value) {
                         List<Score> result = value.body();
-                        score.postValue(result);
+                        ScoreRepoModel scoreRepoModel = new ScoreRepoModel(result);
+                        score.postValue(scoreRepoModel);
                     }
                     @Override
                     public void onError(Throwable e) {
+                        ScoreRepoModel scoreRepoModel = new ScoreRepoModel(e);
+                        score.postValue(scoreRepoModel);
                     }
                 });
     }

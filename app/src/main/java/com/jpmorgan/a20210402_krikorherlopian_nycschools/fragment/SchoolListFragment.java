@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.activity.SchoolDetailActivity;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.adapter.SchoolListAdapter;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.School;
+import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.SchoolRepoModel;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.viewmodel.SchoolViewModel;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.databinding.FragmentSchoolListBinding;
 import java.util.List;
@@ -34,14 +37,20 @@ public class SchoolListFragment extends Fragment {
                 startSchoolDetailActivity(school);
             }
         };
-        SchoolViewModel.getSchool().observe(this, new Observer<List<School>>() {
+        SchoolViewModel.getSchool().observe(this, new Observer<SchoolRepoModel>() {
             @Override
-            public void onChanged(List<School> school) {
-                SchoolViewModel.sortBySchoolName(school);
-                binding.progress.setVisibility(View.GONE);
-                binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-                adapter = new SchoolListAdapter(school, rootView.getContext(), listener);
-                binding.recyclerView.setAdapter(adapter);
+            public void onChanged(SchoolRepoModel schoolRepoModel) {
+                if(schoolRepoModel.getThrowable() != null){
+                    Toast.makeText(getContext(), schoolRepoModel.getThrowable().getMessage(),
+                            Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    SchoolViewModel.sortBySchoolName(schoolRepoModel.getSchoolList());
+                    binding.progress.setVisibility(View.GONE);
+                    binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+                    adapter = new SchoolListAdapter(schoolRepoModel.getSchoolList(), rootView.getContext(), listener);
+                    binding.recyclerView.setAdapter(adapter);
+                }
             }
         });
 

@@ -9,6 +9,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.gms.common.util.Strings;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.R;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.School;
 
@@ -77,24 +79,25 @@ public class SchoolListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 class SchoolHolder extends RecyclerView.ViewHolder{
     TextView schoolNameView;
     TextView schoolLocationView;
-    TextView contactInfo;
+    TextView contactInfoView;
     public SchoolHolder(View itemView) {
         super(itemView);
         schoolNameView = itemView.findViewById(R.id.school_name);
         schoolLocationView = itemView.findViewById(R.id.school_location);
-        contactInfo = itemView.findViewById(R.id.contact_info);
+        contactInfoView = itemView.findViewById(R.id.contact_info);
     }
     public void setInformation(School school){
         schoolNameView.setText(school.getSchoolName());
         schoolLocationView.setText(school.getCity());
-        if(school.getSchoolEmail() != null && school.getPhoneNumber() != null){
-            contactInfo.setText(school.getSchoolEmail()+" , "+school.getPhoneNumber());
+
+        if(!Strings.isEmptyOrWhitespace(school.getSchoolEmail())  && !Strings.isEmptyOrWhitespace(school.getPhoneNumber())){
+            contactInfoView.setText(school.getSchoolEmail()+" , "+school.getPhoneNumber());
         }
-        else if(school.getSchoolEmail() != null ){
-            contactInfo.setText(school.getSchoolEmail());
+        else if(!Strings.isEmptyOrWhitespace(school.getSchoolEmail())){
+            contactInfoView.setText(school.getSchoolEmail());
         }
-        else if(school.getPhoneNumber() != null ){
-           contactInfo.setText(school.getPhoneNumber());
+        else if(!Strings.isEmptyOrWhitespace(school.getPhoneNumber())){
+            contactInfoView.setText(school.getPhoneNumber());
         }
     }
 }

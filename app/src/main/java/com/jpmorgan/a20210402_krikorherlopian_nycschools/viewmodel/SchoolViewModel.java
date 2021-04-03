@@ -3,13 +3,15 @@ package com.jpmorgan.a20210402_krikorherlopian_nycschools.viewmodel;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.School;
+import com.jpmorgan.a20210402_krikorherlopian_nycschools.model.SchoolRepoModel;
 import com.jpmorgan.a20210402_krikorherlopian_nycschools.repository.Repository;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class SchoolViewModel extends ViewModel {
-    public static LiveData<List<School>> getSchool(){
+    public static LiveData<SchoolRepoModel> getSchool(){
+
         return Repository.Companion.getSchool();
     }
     public static void getSchoolCall(){
@@ -22,4 +24,6 @@ public class SchoolViewModel extends ViewModel {
             }
         });
     }
+
+
 }
