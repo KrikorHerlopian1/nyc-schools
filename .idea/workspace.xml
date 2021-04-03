@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36aa1652-33b5-4322-8da5-bb12a0420b58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_school.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_school.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,9 +191,10 @@
       <screen x="0" y="25" width="1680" height="959" />
     </state>
     <state x="576" y="283" key="chooseDestDirectoryDialog/0.25.1680.959@0.25.1680.959" timestamp="1617401390045" />
-    <state x="421" y="335" key="com.intellij.ide.util.TipDialog" timestamp="1617427573856">
-      <screen x="0" y="25" width="1680" height="961" />
+    <state x="421" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1617428249990">
+      <screen x="0" y="25" width="1680" height="959" />
     </state>
+    <state x="421" y="334" key="com.intellij.ide.util.TipDialog/0.25.1680.959@0.25.1680.959" timestamp="1617428249990" />
     <state x="421" y="335" key="com.intellij.ide.util.TipDialog/0.25.1680.961@0.25.1680.961" timestamp="1617427573856" />
     <state x="449" y="257" width="755" height="488" key="find.popup" timestamp="1617401891693">
       <screen x="0" y="25" width="1680" height="959" />
