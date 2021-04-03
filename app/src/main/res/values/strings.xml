@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="list_ny_schools">List of Schools in NYC</string>
+    <string name="website">Website: %s</string>
+    <string name="phone">Phone: %s</string>
+    <string name="email">Email: %s</string>
+    <string name="scores">SAT Scores</string>
+    <string name="reading_unavailable">Reading unavailable</string>
+    <string name="reading">Reading: %s</string>
+    <string name="writing_unavailable">Writing unavailable</string>
+    <string name="writing">Writing :   %s</string>
+    <string name="math_unavailable">Math unavailable</string>
+    <string name="math">Math \u00A0 \u00A0:  %s</string>
+</resources>

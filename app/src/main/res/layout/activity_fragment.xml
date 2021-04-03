@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:minHeight="@dimen/min_toolbar_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/min_toolbar_height"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

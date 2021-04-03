@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing">8dp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+    <dimen name="min_toolbar_height">56dp</dimen>
+    <dimen name="map_height">200dp</dimen>
+</resources>

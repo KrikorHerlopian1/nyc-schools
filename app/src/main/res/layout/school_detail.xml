@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="score"
+            type="com.jpmorgan.a20210402_krikorherlopian_nycschools.model.Score" />
+        <variable
+            name="school"
+            type="com.jpmorgan.a20210402_krikorherlopian_nycschools.model.School" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:tag="google-map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/map_height"
+            map:cameraZoom="13"
+            map:liteMode="true"
+            map:mapType="normal"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="@dimen/spacing"
+                android:layout_width="match_parent"
+                android:paddingBottom="4dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/large_text_size"
+                    android:text="@{school.schoolName}" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:text="@{school.program1}"
+                    android:textColor="?android:textColorPrimary" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:autoLink="email"
+                    android:visibility="@{school.schoolEmail != null ? View.VISIBLE : View.GONE}"
+                    android:text= "@{@string/email(school.schoolEmail)}"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:autoLink="phone"
+                    android:visibility="@{school.phoneNumber != null ? View.VISIBLE : View.GONE}"
+                    android:text= "@{@string/phone(school.phoneNumber)}"
+                    android:textStyle="italic"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:autoLink="web"
+                    android:visibility="@{school.website != null ? View.VISIBLE : View.GONE}"
+                    android:text= "@{@string/website(school.website)}"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/spacing"
+                    android:text="@string/scores"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@{score.satCriticalReadingAvgScore == null ? @string/reading_unavailable : @string/reading(score.satCriticalReadingAvgScore)}"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{score.satWritingAvgScore == null ? @string/writing_unavailable : @string/writing(score.satWritingAvgScore)}"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{score.satMathAvgScore == null ? @string/math_unavailable : @string/math(score.satMathAvgScore)}"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/spacing"
+                    android:layout_marginTop="@dimen/spacing"
+                    android:text="@{`Overview\n\n` +school.overviewParagraph}" />
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>
