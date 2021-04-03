@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/right_arrow"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/disclosure_size"
+        android:layout_height="@dimen/disclosure_size"
         android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
         app:tint="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
