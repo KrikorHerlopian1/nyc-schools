@@ -37,7 +37,7 @@ public class SchoolListFragment extends Fragment {
         SchoolViewModel.getSchool().observe(this, new Observer<List<School>>() {
             @Override
             public void onChanged(List<School> school) {
-                SchoolViewModel.sortBySchoolName();
+                SchoolViewModel.sortBySchoolName(school);
                 binding.progress.setVisibility(View.GONE);
                 binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
                 adapter = new SchoolListAdapter(school, rootView.getContext(), listener);

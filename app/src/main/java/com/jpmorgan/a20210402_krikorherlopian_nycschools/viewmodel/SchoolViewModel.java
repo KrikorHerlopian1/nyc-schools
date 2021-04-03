@@ -15,8 +15,8 @@ public class SchoolViewModel extends ViewModel {
     public static void getSchoolCall(){
         Repository.Companion.getSchoolCall();
     }
-    public static void sortBySchoolName(){
-        Collections.sort(Repository.Companion.getSchool().getValue(), new Comparator<School>() {
+    public static void sortBySchoolName(List<School> school){
+        Collections.sort(school, new Comparator<School>() {
             public int compare(School s1, School s2) {
                 return s1.getSchoolName().toString().compareToIgnoreCase(s2.getSchoolName().toString());
             }

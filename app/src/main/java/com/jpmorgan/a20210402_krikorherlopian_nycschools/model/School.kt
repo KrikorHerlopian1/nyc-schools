@@ -39,4 +39,7 @@ data class School(@SerializedName("dbn")
                   val lng: String?,
                   @SerializedName("phone_number")
                   val phoneNumber: String?): Serializable{
+
+    constructor(name: String) : this(dbn="", schoolName=name,"","","","","","","","",
+    "","","","","","","","")
 }
